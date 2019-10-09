@@ -1,22 +1,51 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "writee",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "a space to write",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "luibo",
   "dependencies": {
+    "@koa/cors": "2",
     "gatsby": "^2.15.11",
     "gatsby-image": "^2.2.17",
+    "gatsby-plugin-flow": "^1.1.5",
     "gatsby-plugin-manifest": "^2.2.15",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.6",
     "gatsby-plugin-sharp": "^2.2.20",
     "gatsby-source-filesystem": "^2.1.21",
     "gatsby-transformer-sharp": "^2.2.13",
+    "got": "^9.6.0",
+    "grant-koa": "^4.6.3",
+    "https-proxy-agent": "^2.2.2",
+    "koa": "^2.8.1",
+    "koa-bodyparser": "2",
+    "koa-exception": "^1.0.6",
+    "koa-isbot": "^0.1.1",
+    "koa-logger": "^3.2.1",
+    "koa-mount": "^4.0.0",
+    "koa-pixie-proxy": "^1.0.7",
+    "koa-proxies": "^0.8.1",
+    "koa-proxy": "^1.0.0-alpha.3",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.0",
+    "koa-session": "^5.12.3",
+    "koa-static": "^5.0.0",
+    "ky": "^0.14.0",
+    "markdown-it": "^9.1.0",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-yaml-metadata-parser": "^2.0.2",
     "prop-types": "^15.7.2",
+    "raw-body": "^2.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-katex": "^2.0.2",
+    "react-markdown": "^4.2.2",
+    "react-router-dom": "^5.0.1",
+    "remark-math": "^2.0.0",
+    "tabler-react": "^1.30.1",
+    "traverse": "^0.6.6"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
@@ -27,7 +56,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop -H 0.0.0.0",
+    "dev-server": "NODE_ENV=development node src/server/server.js",
+    "server": "NODE_ENV=poduction node src/server/server.js",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -35,9 +66,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": ""
   }
 }

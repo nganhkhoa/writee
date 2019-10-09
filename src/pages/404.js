@@ -1,14 +1,18 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import {
+  DefaultErrorPage
+} from 'tabler-react';
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
 
-export default NotFoundPage
+class NotFound extends React.Component {
+  render() {
+    return <DefaultErrorPage
+      title="404"
+      subtitle="The requested page was not found on this server"
+      action="Go back"
+    />;
+  }
+}
+
+export default NotFound;

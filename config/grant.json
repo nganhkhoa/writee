@@ -1,0 +1,19 @@
+{
+  "development": {
+    "defaults": {
+      "protocol": "http",
+      "host": "localhost:3000",
+      "transport": "session",
+      "state": true
+    },
+    "google": {
+      "key": "",
+      "secret": "",
+      "scope": [
+        "https://www.googleapis.com/auth/drive"
+      ],
+      "nonce": true,
+      "callback": "/oauth/google"
+    }
+  }
+}
